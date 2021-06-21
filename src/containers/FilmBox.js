@@ -1,8 +1,14 @@
 import {useState} from 'react'
 import FilmList from '../components/FilmList'
+import FilmForm from './FilmForm'
 
 const FilmBox = () => {
 
+    const addFilm = (submittedFilm) => {
+        submittedFilm.id = Date.now();
+        const updatedFilms = [...films, submittedFilm]
+        setFilms(updatedFilms)
+    }
 
     const [films, setFilms] = useState(
         [
@@ -38,6 +44,7 @@ const FilmBox = () => {
             <h1>Upcoming Film Releases</h1>
             <FilmList films={films}/>
             <h2><a href='https://www.imdb.com/calendar/?region=gb'>View Movie Calendar</a></h2>
+            <FilmForm onFilmSubmit={(film) => {addFilm(film)}}/>
         </>
     )
 }
