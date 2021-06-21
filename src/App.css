@@ -12,7 +12,15 @@ body {
   transition: 0.4s;
   font-size: 23px;
   border-radius: 6px;
-  background-clip: content-box;
+}
+.view-calendar a {
+  color: white;
+  display: inline-block;
+  background-color: #deb522;
+  text-decoration: None;
+  transition: 0.4s;
+  font-size: 23px;
+  border-radius: 6px;
 }
 
 body a:hover {
@@ -30,6 +38,7 @@ body a:hover {
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 60%; margin: 0 auto;
 }
 
 .list-items {
@@ -37,6 +46,9 @@ body a:hover {
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
+  border-bottom: ridge;
+  border-bottom-color: #deb522;
+
 }
 
 .single-items {

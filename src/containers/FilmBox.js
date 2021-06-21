@@ -40,12 +40,16 @@ const FilmBox = () => {
     )
     
     return(
-        <div className='Wrapper'>
+        <>
             <h1 className='header'>Upcoming Film Releases</h1>
-            <FilmList films={films}/>
-            <h2><a href='https://www.imdb.com/calendar/?region=gb'>View Movie Calendar</a></h2>
-            <FilmForm onFilmSubmit={(film) => {addFilm(film)}}/>
-        </div>
+            <div className='Wrapper'>
+                <FilmList films={films}/>
+            </div>
+            <div>
+                <h2 className='view-calendar'><a href='https://www.imdb.com/calendar/?region=gb'>View Movie Calendar</a></h2>
+                <FilmForm onFilmSubmit={(film) => {addFilm(film)}}/>
+            </div>
+        </>
     )
 }
 
