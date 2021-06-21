@@ -6,12 +6,12 @@ body {
 
 .list-items a {
   color: white;
-  display: block;
+  display: inline-block;
   background-color: #deb522;
   text-decoration: None;
   transition: 0.4s;
   font-size: 23px;
-  border-radius: 8px;
+  border-radius: 6px;
   background-clip: content-box;
 }
 
