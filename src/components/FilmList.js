@@ -11,7 +11,9 @@ const FilmList = ({films}) => {
 
     return (
         <>
-            {filmNodes}
+            <div className='list-items'>
+                {filmNodes}
+            </div>
         </>
 
     )
